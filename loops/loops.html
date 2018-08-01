@@ -13,8 +13,21 @@
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
-
+var i=0
+var a=2
 var randomInt = getRandomInt(1, 100);
+while(a=2){
+	var user_num=(prompt("Guess a number"))
+	if (user_num>randomInt){
+	alert("OPS... Guessed too high");
+	i++;} 
+else if (user_num<randomInt){
+	alert("OPS... Too low");
+	i++} 
+else if (user_num==randomInt){
+alert("CONGRATS!! it took u "+i.toString()+"times");
+	a=10;}}
+//document.write(randomInt)
 /* END STARTING CODE */
 
 // your code goes under here
